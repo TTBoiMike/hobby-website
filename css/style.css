@@ -25,7 +25,7 @@ button {
 }
 button:hover {
     background-color: #fff;
-    color: rgba(0,0,0,0.8);
+    color: orange;
     border: rgba(0,0,0,0.8);
 }
 form button {
@@ -66,7 +66,7 @@ h3 {
         padding: 0px 100px;
     }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1300px) {
     .container {
         padding: 0px 175px;
     }

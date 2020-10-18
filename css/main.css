@@ -1,6 +1,6 @@
 .page_banner {
     width: 100%;
-    height: 400px;
+    height: 475px;
     position: relative;
     z-index: 1;
     display: flex;
@@ -15,12 +15,12 @@
 }
 .page_banner_overlay {
     width: 100%;
-    height: 400px;
+    height: 475px;
     position: absolute;
     top: 0;
     left: 0;
     z-index: 2;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.6);
 }
 .page_banner_content {
     position: relative;
@@ -71,8 +71,10 @@
 .thumbnail {
     width: 100%;
     height: 300px;
-    background-color: rgba(0,0,0,0.8);
-    border: 5px solid rgba(0,0,0,0.4);
+    /* background: rgb(238,229,174);
+    background: radial-gradient(circle, rgba(238,229,174,1) 0%, rgba(255,165,0,1) 43%); */
+    background: rgb(238,229,174);
+    background: linear-gradient(41deg, rgba(238,229,174,1) 17%, rgba(247,194,80,1) 45%, rgba(255,165,0,1) 76%, rgba(252,176,69,1) 100%);        
     border-radius: 15px; 
     display: flex;
     flex-direction: column;
@@ -80,22 +82,21 @@
     align-items: center;
 }
 .thumbnail h5 {
-    font-size: 25px;
+    font-size: 30px;
     color: #fff;
     text-align: center;
-    font-weight: 400;
+    font-weight: lighter;
 }
 /* email form section */
 .form_section {
     width: 100%;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    background-color: rgba(0,0,0,0.8);
+    margin-bottom: 75px;
+    color: #fff;
 }
 .form_container {
     width: 100%;
     padding: 30px;
-    background-color: #fff; 
+    background-color: #000; 
     border-radius: 15px;
 }
 .social_icons {
@@ -103,11 +104,12 @@
     height: 25px;
 }
 .social_icons svg {
-    height: 25px;
-    width: 25px;
+    height: 35px;
+    width: 35px;
     fill: #000;
 }
 input {
+    padding: 15px;
     border-bottom: 2px solid black;
 }
 input:focus, input:active {
@@ -146,15 +148,6 @@ textarea {
 }
 
 
-
-
-
-
-
-
-
-
-
 /* media queries */
 @media screen and (min-width: 576px) {
     .page_banner_content {
@@ -165,6 +158,9 @@ textarea {
     .thumbnail_group {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
+    }
+    .form_section h3 {
+        font-size: 30px;
     }
 }
 @media screen and (min-width: 992px) {
@@ -186,6 +182,9 @@ textarea {
         flex: 1;
         margin-left: 75px;
     }
+    .form_section h3 {
+        font-size: 37px;
+    }
 }
 @media screen and (min-width: 1200px) {
     .thumbnail_group {
@@ -194,5 +193,8 @@ textarea {
     }
     .form_container {
         padding: 100px;
+    }
+    .form_section h3 {
+        font-size: 45px;
     }
 }
