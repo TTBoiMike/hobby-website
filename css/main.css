@@ -31,6 +31,27 @@
     align-items: center;
     justify-content: space-around;
 }
+.index_icons {
+    width: 100%;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 25px;
+}
+.index_icons h4 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.index_icons_block {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
 
 @media screen and (min-width: 576px) {
     .page_banner_content {
@@ -41,7 +62,13 @@
 
 }
 @media screen and (min-width: 992px) {
-
+    .index_icons {
+        height: 400px;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+    }
 }
 @media screen and (min-width: 1200px) {
 
