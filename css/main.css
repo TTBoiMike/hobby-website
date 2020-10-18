@@ -40,7 +40,7 @@
     grid-gap: 40px;
 }
 .index_icons img {
-    width: 125px;
+    width: 75px;
 }
 .index_icons h4 {
     font-size: 20px;
@@ -141,6 +141,7 @@ textarea {
 }
 .form_content h3 {
     font-size: 25px;
+    line-height: 1.1;
     font-weight: bold;
 }
 .form_content p {
