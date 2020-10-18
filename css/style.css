@@ -28,6 +28,17 @@ button:hover {
     color: rgba(0,0,0,0.8);
     border: rgba(0,0,0,0.8);
 }
+form button {
+    width: 125px;
+    height: 40px;
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+}
+form button:hover {
+    background-color: black;
+    color: #fff;
+}
 /* font styles */
 h1 {
     font-size: 40px;

@@ -50,6 +50,9 @@
     text-align: center;
 }
 /* favourite website section */
+.fav_web_section{
+    margin-bottom: 75px;
+}
 .fav_web_section h2 {
     font-size: 25px;
     text-align: center;
@@ -60,7 +63,6 @@
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     grid-gap: 20px;
-
 }
 .thumbnail {
     width: 100%;
@@ -79,10 +81,76 @@
     text-align: center;
     font-weight: 400;
 }
+/* email form section */
+.form_section {
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: rgba(0,0,0,0.8);
+}
+.form_container {
+    width: 100%;
+    padding: 30px;
+    background-color: #fff; 
+    border-radius: 15px;
+}
+.social_icons {
+    width: 200px;
+    height: 25px;
+}
+.social_icons svg {
+    height: 25px;
+    width: 25px;
+}
+input {
+    border-bottom: 2px solid black;
+}
+input:focus, input:active {
+    outline: none;
+}
+.form_first_row {
+    width: 100%;
+    display: grid;
+    margin-bottom: 50px;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+.form_second_row {
+    margin-bottom: 50px;
+}
+.form_first_row input {
+    width: 100%;
+}
+.form_second_row input {
+    width: 100%;
+}
+textarea {
+    width: 100%;
+    border: 2px solid black;
+}
+.form_content {
+    width: 100%;
+    margin-bottom: 50px;
+}
+.form_content h3 {
+    font-size: 25px;
+    font-weight: bold;
+}
+.form_content p {
+    margin: 25px 0px;
+}
 
 
 
 
+
+
+
+
+
+
+
+/* media queries */
 @media screen and (min-width: 576px) {
     .page_banner_content {
         height: 150px;
@@ -99,10 +167,27 @@
         grid-template-rows: 1fr;
         grid-template-columns: 1fr 1fr 1fr;
     }
+    .form_container {
+        display: flex;
+        padding: 50px;
+    }
+    .form_content {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .form_container form {
+        flex: 1;
+        margin-left: 75px;
+    }
 }
 @media screen and (min-width: 1200px) {
     .thumbnail_group {
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr;
+    }
+    .form_container {
+        padding: 100px;
     }
 }

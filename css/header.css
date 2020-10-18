@@ -1,8 +1,8 @@
 header {
     width: 100%;
     height: 175px;
-    background-color: #2B3B5E;
-    border-bottom: 3px solid #ADBDE3;
+     background-color: rgba(0,0,0,0.8);
+    border-bottom: 3px solid #fff;
     display: flex;
     flex-direction: column;
     justify-content: center;
