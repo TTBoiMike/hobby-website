@@ -23,11 +23,6 @@ button {
     font-weight: bold;
     font-size: 14px;
 }
-button:hover {
-    background-color: #fff;
-    color: orange;
-    border: rgba(0,0,0,0.8);
-}
 form button {
     width: 125px;
     height: 40px;
@@ -35,9 +30,22 @@ form button {
     border: 2px solid black;
     color: black;
 }
+.example_button {
+    width: 125px;
+    height: 40px;
+    background-color: orange;
+    margin-bottom: 50px;
+}
 form button:hover {
     background-color: orange;
     color: #fff;
+}
+button:active, button:focus {
+    outline: none;
+}
+.active {
+    color: orange;
+    font-weight: bold;
 }
 /* font styles */
 h1 {

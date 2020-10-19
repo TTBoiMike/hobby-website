@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Yantramanav:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <title>Flexbox | Hobby Website</title>
+</head>
+<body>
+    <header class="container">
+        <a href="index.html"><img id="logo" src="/assets/mt_profile_img.jpg" alt="michael thorpe profile picture"></a>
+        <nav>
+            <li><a href="bootstrap.html">Bootstrap</a></li>
+            <li ><a class="active" href="flexbox.html">CSS Flexbox</a></li>
+            <li><a href="grid.html">CSS Grid</a></li>
+        </nav>
+    </header>
+        <!-- page banner -->
+        <section class="page_banner container">
+            <section class="page_banner_overlay"></section>
+                <section class="page_banner_content">
+                    <h1><span class="active">Flexbox</span> Layout Showcase</h1>
+                    <h3>Flexbox is a CSS3 technology used for creating responsive layouts and designing mobile-first websites</h3>
+                </section>
+        </section>
+        <!-- what is flexbox section -->
+        <section class="intro_section container">
+            <h3 class="style_h3">What is flexbox?</h3>
+            <p>Flexbox is a CSS3 layout model that allows web developers to easily align, distribute and order elements within a given space.</p>
+        </section>
+        <!-- flexbox examples -->
+        <section class="examples container">
+            <h3 class="style_h3">Making a flex container</h3>
+            <Button id="flexonebutton" class="example_button">FLEX!</Button>
+            <section id="flexone" class="example_group">
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+            </section>
+            <h3 class="style_h3">Positioning flex items</h3>
+            <Button id="flextwobutton" class="example_button">FLEX!</Button>
+            <section id="flextwo" class="example_group">
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+            </section>
+            <h3 class="style_h3">Positioning & re-ordering individual flex items</h3>
+            <Button id="flexthreebutton" class="example_button">FLEX!</Button>
+            <section id="flexthree" class="example_group">
+                <div class="square">1</div>
+                <div class="flexthreeitem square">2</div>
+                <div class="square">3</div>
+                <div class="square">4</div>
+            </section>
+        </section>
+        <footer class="container">
+            <nav>
+                <li><a href="bootstrap.html">Bootstrap</a></li>
+                <li><a class="active href="flexbox.html">CSS Flexbox</a></li>
+                <li><a href="grid.html">CSS Grid</a></li>
+            </nav>
+        </footer>    
+        <script src="script.js"></script>
+</body>
+</html>

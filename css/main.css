@@ -53,6 +53,9 @@
     align-items: center;
     text-align: center;
 }
+.index_icons_block p {
+    width: 80%;
+}
 /* favourite website section */
 .fav_web_section{
     margin-bottom: 75px;
@@ -90,7 +93,6 @@
 /* email form section */
 .form_section {
     width: 100%;
-    margin-bottom: 75px;
     color: #fff;
 }
 .form_container {
@@ -109,7 +111,7 @@
     fill: #000;
 }
 input {
-    padding: 15px;
+    padding: 10px;
     border-bottom: 2px solid black;
 }
 input:focus, input:active {
@@ -147,8 +149,63 @@ textarea {
 .form_content p {
     margin: 25px 0px;
 }
-
-
+.intro_section {
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.examples {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.examples section {
+    height: 450px;
+}
+.style_h3 {
+    margin-top: 50px;
+    font-size: 25px;
+    font-weight: bold;
+}
+.example_group {
+    width: 100%;
+    border: 1px solid black;        
+}
+.square {
+    height: 100px;
+    width: 100px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: orange;
+}
+.flex {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.flex-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.flex-end {
+    display: flex;
+    justify-content: flex-end;
+}
+.flex-self {
+    background-color: red;
+    order: 4;
+    color: #fff;
+    align-self: flex-end;
+}
 /* media queries */
 @media screen and (min-width: 576px) {
     .page_banner_content {
@@ -156,6 +213,9 @@ textarea {
     }
 }
 @media screen and (min-width: 768px) {
+    .page_banner h3, .intro_section p {
+        width: 60%;
+    }
     .thumbnail_group {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
