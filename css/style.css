@@ -9,6 +9,7 @@
 }
 body {
     font-family: 'Yantramanav', sans-serif;
+    width: 100vw;
 }
 .container {
     padding: 0px 30px;
@@ -22,6 +23,10 @@ button {
     color: #fff;
     font-weight: bold;
     font-size: 14px;
+}
+.fav_web_section button:hover {
+    background-color: #fff;
+    color: orange;
 }
 form button {
     width: 125px;
@@ -42,6 +47,9 @@ form button:hover {
 }
 button:active, button:focus {
     outline: none;
+}
+button:hover {
+    cursor: pointer;
 }
 .active {
     color: orange;

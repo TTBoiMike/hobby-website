@@ -19,19 +19,23 @@ header a:hover {
 header nav {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
     margin-top: 20px;
 }
-#logo {
+.logo {
     height: 75px;
     width: 75px;
     border-radius: 50%;
     border: 3px solid #fff;
 }
-
-
+.logo-active {
+    border: 3px solid orange;
+}
+header img:hover {
+    border: 3px solid orange;
+}
 @media screen and (min-width: 576px) {
     header {
        height: 125px;
@@ -39,7 +43,11 @@ header nav {
        flex-direction: row; 
     }
     header nav {
+        justify-content: flex-end;
         width: 300px;
         margin-top: 0px;
+    }
+    header nav li:nth-child(2) {
+        margin-left: 50px;
     }
 }

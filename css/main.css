@@ -165,7 +165,7 @@ textarea {
     align-items: center;
 }
 .examples section {
-    height: 450px;
+    height: 500px;
 }
 .style_h3 {
     margin-top: 50px;
@@ -205,6 +205,23 @@ textarea {
     order: 4;
     color: #fff;
     align-self: flex-end;
+}
+/* grid page */
+.grid-square {
+    background-color: orange;
+}
+.makegrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 10px;
+}
+.makebiggrid  {
+        display: grid;
+        grid-template-columns: 40% 20% 40%;
+        grid-template-rows: 80px auto 80px; 
+        column-gap: 10px;
+        row-gap: 15px;
 }
 /* media queries */
 @media screen and (min-width: 576px) {
